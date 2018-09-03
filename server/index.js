@@ -49,7 +49,7 @@ const registerWebhook = function(shopDomain, accessToken, webhook) {
     response => console.log(`webhook '${webhook.topic}' created`),
     err => console.log(`Error creating webhook '${webhook.topic}'. ${JSON.stringify(err.response.body)}`)
   );
-}
+};
 
 const app = express();
 const isDevelopment = NODE_ENV !== 'production';
