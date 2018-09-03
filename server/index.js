@@ -94,6 +94,12 @@ if (isDevelopment) {
 // Install
 app.get('/install', (req, res) => res.render('install'));
 
+// About
+app.get('/about', (req, res) => res.render('about'));
+
+// Gift a friend form
+app.get('/giftmyfriend', (req, res) => res.render('giftmyfriend'));
+
 // Create shopify middlewares and router
 const shopify = ShopifyExpress(shopifyConfig);
 
